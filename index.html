@@ -1,18 +1,29 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="styles.css" />
         <title>Timer</title>
         <meta charset="UTF-8" />
     </head>
 
     <body>
-        <h1>It's the final countdown!</h1>
-        <div>
-            <label for="countInput">Number</label>
-            <input id="countInput" />
+        <div class="container">
+            <h1>It's the final countdown!</h1>
+            <div>
+                <label for="countInput">Number</label>
+                <input id="countInput" />
+            </div>
+            <div>
+                <button class="btn" id="startButton">Start Counting</button>
+            </div>
+            <div id="countOutput"></div>
         </div>
-        <div><button id="startButton">Start Counting</button></div>
-        <div id="countOutput"></div>
 
         <script src="./script.js" type="module"></script>
     </body>
